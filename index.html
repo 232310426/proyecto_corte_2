@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Establece el idioma del contenido -->
+<head>
+    <meta charset="UTF-8">  <!-- Soporte para caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsive -->
+    <title>Operaciones con Fracciones</title> <!-- Título de la pestaña -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace al archivo de estilos -->
+
+</head>
+<body>
+     <!-- Encabezado principal -->
+    <h2>Calculadora de Fracciones</h2>
+     <!-- Formulario para capturar fracciones y seleccionar operación -->
+    <form action="procesar.php"method="post"> <!-- Envia los datos al script PHP para procesarlos -->
+         <!-- Primer campo de fracción -->
+        <fieldset>
+            <legend>Fracción 1</legend>
+            <input type="number" name="num1" placeholder="Numerador" required min="1">
+            /
+            <input type="number" name="den1" placeholder="Denominador" required min="1">
+        </fieldset>
+
+         <!-- Segundo campo de fracción -->
+        <fieldset>
+            <legend>Fracción 2</legend>
+            <input type="number" name="num2" placeholder="Numerador" required min="1">
+            <input type="number" name="den2" placeholder="Denominador" required min="1">
+        </fieldset>
+
+        <!-- Menú desplegable para elegir la operación -->
+        <label for="operacion">Operación:</label>
+        <select name="operacion" required>
+            <option value="sumar">Sumar</option>
+            <option value="restar">Restar</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+            <option value="Comparar">Comparar</option>
+            <option value="equivalente">Convertir a equivalente (x2)</option>
+        </select>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>

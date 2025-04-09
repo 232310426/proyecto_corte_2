@@ -1,0 +1,113 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b1d192;
+    padding: 20px;
+    color: #214707;
+}
+
+/*Titulo de la Calculadora*/
+h2 {
+    text-align: center;
+    color: #1e3f04;
+}
+
+/*contenido del formulario*/
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #72ab5c88;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*agrupacion de campos*/
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+/*titulo de cada conjunto de campos*/
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*campos numericos de entrada*/
+input[type="number"] {
+    width: 70px;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #bfdfa7;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/*selector desplegable*/
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #bfdfa7;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*boton para enviar el formulario*/
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #578036;
+    color: rgb(253, 255, 250);
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9cc86d;
+}
+
+body {
+    background-color: #b1d192;
+    font-family: Arial, sans-serif;
+    color: #1a3b0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    font-size: 20px;
+}
+
+/*estilo del texto del resultado*/
+.resultado {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1a3b0a;
+}
+
+/*boton personalizado para volver*/
+.boton-volver {
+    background-color: #688f46;
+    color: #0f2905;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton-volver:hover {
+    background-color: #79a954;
+    transform: scale(1.05);
+}
+
+.boton-volver:active {
+    background-color: #6b964a;
+    transform: scale(0.98);
+}
